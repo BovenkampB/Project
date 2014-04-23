@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Registreren</title>
+</head>
+
+<body>
+		<div id="content">
+			<form id="registratie" method="post" action="registreer.php">
+                            <fieldset>
+                                <legend>Inloggegevens:</legend>
+                                    <table>
+                                        <tr> 
+                                            <td>Gebruikersnaam:</td>
+                                            <td> <input class="input" type="text" name="Gebruikersnaam" placeholder="Gebruikersnaam" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wachtwoord:</td>
+                                            <td> <input class="input" type="password" name="Wachtwoord" placeholder="Wachtwoord" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Herhaling wachtwoord: </td>
+                                            <td> <input class="input" type="password" name="Herhaling" placeholder="Herhaling" /> </td>
+                                        </tr>
+                                    </table>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Persoonlijke gegevens</legend>
+                                    <table>
+                                        <tr>
+                                            <td> Voornaam: </td>
+                                            <td> <input class="input" type="text" name="Voornaam" placeholder="Voornaam" /> </td>
+                                            <td> Plaats: </td>
+                                            <td> <input class="input" type="text" name="Plaats" placeholder="Plaats" /> </td>
+                                            <td> Geboortedatum: </td>
+                                            <td> <input class="input" type="date" name="Geboortedatum" placeholder="Geboortedatum" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Achternaam: </td>
+                                            <td> <input class="input" type="text" name="Achternaam" placeholder="Achternaam" /> </td>
+                                            <td> Land: </td>
+                                            <td> <input class="input" type="text" name="Land" placeholder="Land" /> </td>
+                                            <td> Geheime vraag: </td>
+                                                <td><select>
+                                                    <option value="moeder">Wat is de meisjesnaam van je moeder?</option>
+                                                    <option value="leraar">Wat was je lievelings leraar op de middelbare school?</option>
+                                                    <option value="getal">Wat is je lievelingsgetal?</option>
+                                                    <option value="kleur">Wat is je lievelingskleur?</option>
+                                                </select></td>
+                                        </tr>
+                                        <tr><td><input id="button" type="submit" value="registreer"/> </td></tr>
+                                    </table>
+                            </fieldset>
+			</form>
+		</div><!--sluitend content-->
+
+
+</body>
+</html>
