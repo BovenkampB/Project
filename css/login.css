@@ -1,0 +1,47 @@
+body{
+	background-color: #B57F21;
+}
+a{
+	color: rgb(52,52,52);
+}
+
+#login{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+#loginform, #loggedin{
+	margin-top: 0px;
+	font-size: 12px;
+	width: 250px; height: 200px ;
+}
+
+#loginform input[type=text],
+	#loginform input[type=password]{
+	color: white;
+	font-size: 12px;
+	margin-right: 2%;
+	padding: 0.4em;
+	border-radius: 0px;
+	border-style: solid 1px;
+	background-color: rgb(52,52,52);
+	outline: none;
+}
+
+	
+#loginform input[type=submit]{
+	width: 37%; height: 45px;
+	border-radius: 40px;
+	border: double #44F2D5;
+}
+
+#loginform input[type=submit]:hover{
+		box-shadow: 0 0 50px #44F2D5;
+		border-color: #44F2D5;
+		cursor: pointer;
+	}
+	
+
+}
+
+	
