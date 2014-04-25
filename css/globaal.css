@@ -27,7 +27,6 @@
 	background: -ms-linear-gradient(-45deg,  rgba(0,136,204,1) 0%,rgba(0,136,204,0.51) 49%,rgba(0,136,204,0.47) 53%,rgba(255,255,255,0.35) 65%,rgba(255,255,255,0) 100%); /* IE10+ */
 	background: linear-gradient(135deg,  rgba(0,136,204,1) 0%,rgba(0,136,204,0.51) 49%,rgba(0,136,204,0.47) 53%,rgba(255,255,255,0.35) 65%,rgba(255,255,255,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088cc', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 	background-size: 100%;
       
 }
