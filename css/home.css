@@ -1,3 +1,19 @@
+.navbar-form{
+      margin-top: -0.1%;
+}
+
+.navbar-form a input{
+      margin-left: 28%;
+      float: left;
+}
+
+.navbar-form a {     
+      font-size: 10px;
+      color: rgb(255,255,255);
+      margin-right: 30%;   
+}
+
+
 #myCarousel{
       background-image: url(../img/slider.png);
       background-size: 100%;
