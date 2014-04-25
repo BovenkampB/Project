@@ -5,7 +5,7 @@
 #biedpaneel{
     width: 25%;
     height: 100%;
-   float:left; 
+   float:right; 
 }
 
 #product{
@@ -14,8 +14,12 @@
    float:left; 
 }
 
+#subfoto img{
+    width: 100px !important;
+}
+
 #foto{
-    float:right;
+    float:left;
 }
 
 #gerelateerdeproducten{
