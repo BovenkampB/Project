@@ -1,3 +1,8 @@
+#header{
+	text-align: center;
+	margin-bottom:11px;
+}
+
 .navbar-form{
       margin-top: -0.1%;
 }
@@ -22,11 +27,12 @@
 body {
       padding-bottom: 40px;
       color: #5a5a5a;
+      background-color:#CCC;
     }
 
-      #content{
-            top:200px;
-      }
+/*      #content{
+            background-color: #CCC;
+      }*/
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -138,7 +144,10 @@ body {
     .carousel-caption .btn {
       margin-top: 10px;
     }
-
+      
+      .carousel h2 {
+            color: #fff;
+      }
 
 
     /* MARKETING CONTENT
