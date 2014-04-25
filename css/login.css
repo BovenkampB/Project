@@ -1,6 +1,10 @@
-body{
-	background-color: #B57F21;
+
+#header{
+	text-align: center;
+	margin-bottom:11px;
 }
+
+
 a{
 	color: rgb(52,52,52);
 }

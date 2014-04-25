@@ -4463,6 +4463,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-form {
+  margin-top:5px;
   margin-bottom: 0;
   *zoom: 1;
 }
