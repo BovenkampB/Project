@@ -13,6 +13,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/bootstrap-responsive.css" rel="stylesheet">
     <link href="../css/globaal.css" rel="stylesheet">
+    <link href="../css/productpagina.css" rel="stylesheet">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -49,7 +50,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="loggedout.html">Home</a></li>                
+                <li class="active"><a href="loggedin.html">Home</a></li>                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veilingen<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -80,22 +81,24 @@
                         <li><a href="#about">Sub-catagorie4</a></li>
                       </ul>
                     </li>
-                  </ul>                                  
-                  <li><a href="#">Aanbieden</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                   <form class="navbar-form pull-left" role="search"> 
-                      <input class="search" type="text" placeholder="Zoek Product">
-                      <button type="search" class="btn">Zoek</button>
-                    </form>
-                </ul> 
-              <form class="navbar-form pull-right" action="loggedin.html">                
-                <input class="span2" type="text" placeholder="Gebruikersnaam">                 
-                <input class="span2" type="password" placeholder="Wachtwoord">                 
-                <button type="submit" class="btn">Login</button>
-                <br/>
-                 <a href=registreren.html>Registreer</a>                 
-                 <a href=forgotpassword.html>Wachtwoord vergeten</a>
-              </form>
+                  </ul>                
+                <li><a href="#">Aanbieden</a></li>
+                <li><a href="contact.html">Contact</a><li>
+                <form class="navbar-search pull-left" role="search"> 
+                    <input class="search" type="text" placeholder="Zoek Product">
+                    <button type="submit" class="btn">Zoek</button>
+                </form>
+              </ul>
+              <ul class="nav pull-right">
+                <li class="nav dropdown pull-right">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingelogd: Bob Rens <b class="caret"></b></a>
+                  <ul class="dropdown-menu pull-right">
+                  <li><a href="instellingen.html">Instellingen</a></li>                
+                  <li class="divider"></li>
+                  <li><a href="loggedout.html">Log uit</a></li>                
+                </ul>
+              </li>
+            </ul>    
             </div><!-- /.navbar-inner -->
           </div><!-- /.navbar -->
         </div> <!-- /.container -->
@@ -103,8 +106,41 @@
     </div><!-- /.navbar-wrapper -->
 
 <div id="content" class="container">
+    <div id="biedpaneel">
+        <p>Veiling sluit over:<br />
+        1 dag, 2 uur, 3 minuten</p>
+        <div id="biedingen">
+            <b>Biedingen:</b> <br />
+            &euro;1,50 - A Jansen. <br />
+            &euro;2,00 - B de Kleuver. <br/>
+            &euro;2,50 - DJ de Groot.
+        </div>
+        <br/>
+        Minimum bod: &euro;3,50
+        <br/>
+        &euro;<input class="input" type="text" name="bedrag" placeholder="3,50+" /> 
+    </div>
+    <div id="product">
+        <h1>Rubiks cube</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tellus quis qui varius euismod.<img id = "foto" src="../img/rubiks.png" >
+        Nam sit amet eros scelerisque, tincidunt leo sed, convallis mi. Aliquam et consequat est, non vehicula mi. Donec
+        pellentesque pellentesque dignissim. Praesent eget justo enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tellus quis qui varius euismod.
+        Nam sit amet eros scelerisque, tincidunt leo sed, convallis mi.Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tellus quis qui varius euismod.
+        Nam sit amet eros scelerisque, tincidunt leo sed, convallis mi. Aliquam et consequat est, non vehicula mi. Donec
+        pellentesque pellentesque dignissim. Praesent eget justo enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tellus quis qui varius euismod.
+        Nam sit amet eros scelerisque, tincidunt leo sed, convallis mi.</p>
+        <img src="../img/rubiks.png" >
+        <img src="../img/rubiks.png" >
+        <img src="../img/rubiks.png" >
+        
+    </div>
+    <div id="gerelateerdeproducten">
+        <h1>Gerelateerde producten</h1>
+        <img src="../img/rubiks.png" >
+        <img src="../img/rubiks.png" >
+        <img src="../img/rubiks.png" >
 
-    
+    </div>
 
 </div>
     

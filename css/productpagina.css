@@ -1,0 +1,28 @@
+#content{
+    margin-top:5%;
+}
+
+#biedpaneel{
+    width: 25%;
+    height: 100%;
+   float:left; 
+}
+
+#product{
+    width:75%;
+    height:100%;
+   float:left; 
+}
+
+#foto{
+    float:right;
+}
+
+#gerelateerdeproducten{
+    /*margin-left:25%;*/
+    width:100%;
+    clear:both;
+}
+#gerelateerdeproducten img{
+    margin-right:15%;
+}
