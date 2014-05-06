@@ -92,8 +92,8 @@
                   </ul>                
                 <li><a href="contact.html">Contact</a></li>
                 <form class="navbar-form pull-left" role="search"> 
-                      <input class="search" type="text" placeholder="Zoek Product">
-                      <button type="search" class="btn">Zoek</button>
+                      <!--<input class="search" type="text" placeholder="Zoek Product">
+                      <button type="search" class="btn">Zoek</button>-->
                 </form>                       
                   </ul>
                 </li>
@@ -115,7 +115,7 @@
 
     
 		<div id="content" class="container">
-			<form id="registratie" method="post" action="registreer.php">
+			<form id="registratie" method="post" action="loggedin.html">
                             <fieldset>
                                 <legend>Inloggegevens:</legend>
                                     <table>
@@ -164,15 +164,29 @@
                                             <td> Telefoon nummer 1: </td>
                                             <td> <input class="input" type="text" name="Telefoon nummer 1" placeholder="Telefoon nummer 1" /> </td>
                                             <td> Geheim antwoord: </td>
-                                            <td> <input class="input" type="date" name="Geheim antwoord" placeholder="Geheim antwoord" /> </td>
+                                            <td> <input class="input" type="text" name="Geheim antwoord" placeholder="Geheim antwoord" /> </td>
                                         </tr>
 					<tr>
                                             <td> Postcode: </td>
                                             <td> <input class="input" type="text" name="Postcode" placeholder="Postcode" /> </td>
                                             <td> Telefoon nummer 2: </td>
                                             <td> <input class="input" type="text" name="Telefoon nummer 2" placeholder="Telefoon nummer 2" /> </td>
+                                        </tr>  
+                                    </table>
+                                
+                                        <tr>
+                                        <td>Let op: Een verkoop account kunt u pas maken zodra u zich heeft geregistreerd als gebruiker. Dit doet u dan bij instellingen van uw account.</td>
                                         </tr>
-                                        <tr><td><input class="btn btn-large btn-primary" id="button" type="submit" value="registreer"/> </td></tr>
+                                        <br/>
+                                        <tr>
+                                            <td><input class="checkbox" type="checkbox">Ik accepteer de <a href="#">Algemene voorwaarden</a></td>
+                                        </tr>
+                                    <table>
+                                        
+                                        <br/><br/>
+                                        <tr>
+                                            <td><input class="btn btn-large btn-primary" id="button" type="submit" value="registreer"/> </td>
+                                        </tr>
                                     </table>
                             </fieldset>
 			</form>

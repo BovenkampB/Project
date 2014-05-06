@@ -1,4 +1,12 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+    <title>Registreren</title>
+</head>
+
+<body>
+    
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +21,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/bootstrap-responsive.css" rel="stylesheet">
     <link href="../css/globaal.css" rel="stylesheet">
+    <link href="../css/registreren.css" rel="stylesheet">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,7 +43,7 @@
     <!-- NAVBAR
     ================================================== -->
  
-    <div class="navbar-wrapper">
+     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
         <div class="navbar navbar-inverse">
@@ -49,7 +58,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="loggedout.html">Home</a></li>                
+                <li class="active"><a href="loggedin.html">Home</a></li>                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veilingen<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -80,35 +89,54 @@
                         <li><a href="#about">Sub-catagorie4</a></li>
                       </ul>
                     </li>
-                  </ul>                                  
-                  <li><a href="#">Aanbieden</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                   <form class="navbar-form pull-left" role="search"> 
-                      <input class="search" type="text" placeholder="Zoek Product">
-                      <button type="search" class="btn">Zoek</button>
-                    </form>
-                </ul> 
-              <form class="navbar-form pull-right" action="loggedin.html">                
-                <input class="span2" type="text" placeholder="Gebruikersnaam">                 
-                <input class="span2" type="password" placeholder="Wachtwoord">                 
-                <button type="submit" class="btn">Login</button>
-                <br/>
-                 <a href=registrerenstap1.html>Registreer</a>                 
-                 <a href=forgotpassword.html>Wachtwoord vergeten</a>
-              </form>
+                  </ul>                
+                <li><a href="#">Aanbieden</a></li>
+                <li><a href="contactloggedin.html">Contact</a><li>
+                
+              </ul>
+              <ul class="nav pull-right">
+                <form class="navbar-search pull-left" role="search"> 
+                    <input class="search" type="text" placeholder="Zoek Product">
+                    <button type="submit" class="btn">Zoek</button>
+                </form>
+                <li class="nav dropdown pull-right">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingelogd: Bob Rens <b class="caret"></b></a>
+                  <ul class="dropdown-menu pull-right">
+                  <li><a href="instellingen.html">Instellingen</a></li>                
+                  <li class="divider"></li>
+                  <li><a href="loggedout.html">Log uit</a></li>                
+                </ul>
+              </li>
+            </ul>    
             </div><!-- /.navbar-inner -->
           </div><!-- /.navbar -->
         </div> <!-- /.container -->
       </div><!--/.nav-collapse -->    
     </div><!-- /.navbar-wrapper -->
 
-<div id="content" class="container">
-
     
+		<div id="content" class="container">
+			<form id="registratie" method="post" action="registreer.php">
+                            <fieldset>
+                                <legend>Instellingen:</legend>
+                                    <table>
+                                        <tr> 
+                                            <td>Gebruiker:</td>
+                                            <td> <input class="input" type="text" name="Gebruiker" placeholder="Gebruiker" /> </td>
+                                            <td>Gebruiker:</td>
+                                            <td> <input class="input" type="dropdown" name="" placeholder="Bank" /> </td>
+                                            <td>Rekening nr:</td>
+                                            <td> <input class="input" type="text" name="Rekening nr" placeholder="Rekening nr" /> </td>
+                                             <td>Creditcard nr:</td>
+                                            <td> <input class="input" type="text" name="Creditcard nr" placeholder="Creditcard nr" /> </td>
+                                        </tr>                                       
+                                    </table>
+                                    <a class="btn btn-large btn-primary" href="loggedin.html">Verstuur bevestigingscode</a>
+                            </fieldset>                           
+			</form>
+		</div><!--sluitend content-->
 
-</div>
-    
-      <hr>
+                   <hr>
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -116,10 +144,8 @@
       </footer>
 
     </div><!-- /.container -->
-
-
-
-    <!-- Le javascript
+                
+                    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -133,8 +159,6 @@
       }(window.jQuery)
     </script>
     <script src="../js/holder.js"></script>
-  </body>
+
+</body>
 </html>
-
-
-  
