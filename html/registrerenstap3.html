@@ -124,14 +124,17 @@
                                             <td> <input class="input" type="text" name="Gebruikersnaam" placeholder="Gebruikersnaam" /> </td>
                                         </tr>
                                         <tr>
-                                            <td>Wachtwoord:</td>
+                                            <td>Wachtwoord: *</td>
                                             <td> <input class="input" type="password" name="Wachtwoord" placeholder="Wachtwoord" /> </td>
                                         </tr>
                                         <tr>
                                             <td> Herhaling wachtwoord: </td>
                                             <td> <input class="input" type="password" name="Herhaling" placeholder="Herhaling" /> </td>
                                         </tr>
-                                    </table>
+										</table>
+										<tr>
+											<td><h6> * Wachtwoord bevat minimaal 7 tekens. Het wachtwoord mag alleen letters en cijfers bevatten. </h6></td>
+										</tr>
                             </fieldset>
                             <fieldset>
                                 <legend>Persoonlijke gegevens:</legend>
@@ -156,8 +159,8 @@
                                             <td> <input class="input" type="date" name="Geboortedatum" placeholder="Geboortedatum" /> </td>
                                         </tr>
 					<tr>
-                                            <td> Postcode: </td>
-                                            <td> <input class="input" type="text" name="Postcode" placeholder="Postcode" /> </td>
+                                            <td></td>
+                                            <td> <input class="input" type="text" name="Postcode" placeholder="Adres" /> </td>
                                             <td> Geheime&nbsp;vraag: </td>
                                             <td><select>
                                                 <option value="moeder">Wat is de meisjesnaam van je moeder?</option>
@@ -169,21 +172,28 @@
                                         </tr>
                                         
                                            <tr> 
+                                        <td> Postcode: </td>
+                                            <td> <input class="input" type="text" name="Postcode" placeholder="Postcode" /> </td>
+										<td> Geheim&nbsp;antwoord: </td>
+                                        <td> <input class="input" type="text" name="Geheim antwoord" placeholder="Geheim antwoord" /> </td>	
+									  
+										                                   
+                                    </tr>
+                                    <tr> 
                                         <td>Telefoon nr:</td>
-                                        <td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
-                                        <td> Geheim&nbsp;antwoord: </td>
-                                        <td> <input class="input" type="text" name="Geheim antwoord" placeholder="Geheim antwoord" /> </td>                                             
+										<td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
+																			
                                     </tr>
                                     <tr> 
                                         <td>Extra&nbsp;telefoon&nbsp;nr:</td>
                                         <td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
                                          <td><button type="button" class="btn btn-success">+</button>
-                                            <button type="button" class="btn btn-danger">-</button></td>
+                                            <button type="button" class="btn btn-danger">-</button></td>                                                                             
                                     </tr>
-                                     <tr> 
-                                        <td>Extra&nbsp;telefoon&nbsp;nr:</td>
-                                        <td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>                                                                             
-                                    </tr>
+									<tr>
+										<td>Extra&nbsp;telefoon&nbsp;nr:</td>
+										<td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
+
                                     </table>
                                      
                                         <tr>
@@ -197,7 +207,7 @@
                                         
                                         <br/><br/>
                                         <tr>
-                                            <td><input class="btn btn-large btn-primary" id="button" type="submit" value="registreer"/> </td>
+                                            <td><input class="btn btn-large btn-primary" id="button" type="submit" value="Registreer"/> </td>
                                         </tr>
                                     </table>
                                       
