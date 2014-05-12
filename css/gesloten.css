@@ -2,21 +2,31 @@
     margin-top:5%;
 }
 
-#verkoopgegevens{
-	
-    height:100px;
+#verkoopgegevens{	
+	margin-top:3%;
+    height:10%;
 	float: right;
 	position: absolute;
-	width:50%;
+	width:40%;
 	top:35%;
 	left: 40%;
 } 
+
+#tabel{
+	text-align:center;
+}
+
+#email{
+	width:20%;
+    height:10%;
+}
 
 #product{
 	width:20%;
     height:10%;
     float:left;
     margin-bottom: 10%;
+	
 }
 
 #product #subfoto img{
