@@ -1,3 +1,21 @@
+#email .borderbutton{
+    border: none;
+}
+
+#email td{
+border:1px solid #000;
+width: 20%
+}
+
+#verkoopgegevens{
+    margin-bottom: 5%;
+}
+
+#feedback #product{
+    float: none !important;
+    margin-bottom: 0%;
+}
+
 .uploadimg img{
     height:180px;
 }
