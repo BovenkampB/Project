@@ -82,7 +82,7 @@
                       </ul>
                     </li>
                   </ul>                
-                <li><a href="#">Aanbieden</a></li>
+                <li><a href="aanbieden.html">Aanbieden</a></li>
                 <li><a href="contactloggedin.html">Contact</a><li>                
               </ul>
               <ul class="nav pull-right">
@@ -109,7 +109,7 @@
     <form id="registratie" method="post" action="registreer.php">
                             <fieldset>
                                 <legend>Aanbieden:</legend>
-                                <h5>Productsgegevens:</h5>
+                                <h5>Productgegevens:</h5>
                                  <div class="beschrijving">
                                     <td>Beschrijving:</td>
                                     <td><textarea type="textarea" name="beschrijving" placeholder="Beschrijf hier uw product"></textarea> </td>
@@ -117,7 +117,7 @@
                                     <table>                                         
                                         <tr> 
                                             <td>Product&nbsp;titel:</td>
-                                            <td> <input class="input" type="text" name="producttitel" placeholder="product titel" /> </td>                                           
+                                            <td> <input class="input" type="text" name="producttitel" placeholder="Product titel" /> </td>                                           
                                         </tr>
                                        
                                         <tr>                                    
@@ -268,7 +268,14 @@
         </tr>
          <tr>
             <td>Looptijd: </td>
-            <td> <input class="input" type="text" name="Looptijd" placeholder="Looptijd" /> </td>
+            <td>
+			<select>
+				<option value="1 dag">1 dag</option>
+				<option value="3 dagen">3 dagen</option>
+				<option value="5 dagen">5 dagen</option>
+				<option value="7 dagen">7 dagen</option>
+				<option value="10 dagen">10 dagen</option>
+			</select> </td>
         </tr>
          <tr>
             <td>Verzendkosten: </td>
@@ -276,7 +283,7 @@
         </tr>
           <tr>
             <td>verzendinstructies: </td>
-            <td> <input class="input" type="text" name="verzendinstructies" placeholder="verzendinstructies" /> </td>
+            <td> <input class="input" type="text" name="verzendinstructies" placeholder="Verzendinstructies" /> </td>
         </tr>
         
        </table>
