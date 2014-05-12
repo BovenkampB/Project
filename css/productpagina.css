@@ -1,3 +1,52 @@
+.uploadimg img{
+    height:180px;
+}
+
+#tags{
+    margin-bottom: 10px;
+}
+
+.uploadimg{
+  
+    width:200px;;
+    float:left;
+    margin-left: 5%;
+}
+
+ul {
+    list-style-type: none;
+    }
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+        
+        float:left;    
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#product #subfoto img{
+    
+
+    width: 100px;
+ 
+}
+
+input#uploadFile{
+    width: 50%;
+}
+
 #content{
     margin-top:5%;
 }
@@ -15,9 +64,7 @@
    margin-bottom: 10%;
 }
 
-#product #subfoto img{
-    width: 10px;
-}
+
 
 #foto{
     float:left;
@@ -31,3 +78,17 @@
 #gerelateerdeproducten img{
     margin-right:15%;
 }
+.beschrijving textarea{
+    width: 500px;
+    height: 100px;
+    margin-top:15%;
+    resize:none;
+}
+
+.beschrijving{
+    float:right;
+    margin-top:-7.5%;
+}
+
+
+
