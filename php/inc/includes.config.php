@@ -1,3 +1,4 @@
+
 <?php
 	GLOBAL $DB, $_CONFIG;
 
@@ -10,5 +11,4 @@
 
 	$_CONFIG['params'] = array(
 	);
-
 ?>
