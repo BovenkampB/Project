@@ -1,8 +1,8 @@
 <?php
-	GLOBAL $DB;
+	GLOBAL $DB, $_CONFIG;
 
 	$_CONFIG['mssql'] = array(
-		'host' 		=> 'aq01-app-2k12.authiq.org',
+		'host' 		=> '149.210.154.147',
 		'user' 		=> 'iproject_15',
 		'password' 	=> 'Bbrlweep1',
 		'database' 	=> 'I-Project_15',
