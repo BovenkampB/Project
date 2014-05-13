@@ -60,7 +60,7 @@ body {
     }
     
     
-    .navbar-wrapper {
+    .navbar-wrapper-home {
       position: absolute;
       top: 0;
       left: 0;
@@ -68,6 +68,13 @@ body {
       z-index: 10;
       margin-top: 200px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    
+    .navbar-wrapper {
+      right: 0;
+      z-index: 10;
+      margin-top: 1%;
+      margin-bottom: -4%; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
     .navbar-wrapper .navbar {
 
