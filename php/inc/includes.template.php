@@ -1,5 +1,4 @@
 <?php	
-
 	/*
 		Haal Alle Paginas Op En Sla Ze Op In De Output Buffer (OB)
 		Uitleg: We cachen ze tijdelijk zodat we alle paramaters nog kunnen vervangen.
@@ -10,10 +9,11 @@
 		{
 			$content = "";
 			ob_start();
-			//include(tpl . 'header.php');
+			include(tpl . 'header.html');
+			include(tpl . 'header.php');
 			include(tpl . $page . '.php');
-			//include(tpl . $page . '.html');
-			//include(tpl . 'footer.php');
+			include(tpl . $page . '.html');
+			include(tpl . 'footer.html');
 			$content = ob_get_clean();
 			parsePage($content);
 		}
@@ -31,10 +31,11 @@
 	{
 		switch($page)
 		{
-			case "about":
 			case "contact":
 			case "start":
 			case "register":
+			case "logout":
+			case "product":
 				return true;
 			break;
 
@@ -62,6 +63,12 @@
 		GLOBAL $_CONFIG;
 		foreach ($_CONFIG['params'] as $key => $value) {
 			$content = str_replace('%' . $key . '%', $value, $content);
+		}
+		if(isset($_SESSION['user']))
+		{
+			foreach($_SESSION['user'] as $key => $value){
+				$content = str_replace('%' . $key . '%', $value, $content);
+			}
 		}
 		return $content;
 	}
