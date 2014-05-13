@@ -1,35 +1,40 @@
 <?php
 	GLOBAL $DB;
-
 	function connectToServer()
 	{
-		$DB = mssql_connect(
-				$_CONFIG['mssql']['host'],
-				$_CONFIG['mssql']['user'],
-				$_CONFIG['mssql']['password']
-			)or die("Kon geen verbinding maken met de SQL Server *sadpanda*");
+		GLOBAL $_CONFIG, $DB;
 
-		mssql_select_db($_CONFIG['mssql']['database'], $DB)
-			or die("Kon geen verbinding maken met de database *sadpanda*");
+		$DB = sqlsrv_connect($_CONFIG['mssql']['host'], array('UID'=>$_CONFIG['mssql']['user'], 'PWD'=>$_CONFIG['mssql']['password'], 'Database'=>$_CONFIG['mssql']['database']));
+		if(!$DB) {
+ 			echo "<h1><b>Kon geen verbinding maken met de database *sadpanda*.</b></h1>";
+		    die( print_r( sqlsrv_errors(), true));
+		}
 	}
 
-	/*
 	function runQuery($query)
 	{
-		return mssql_query($query);
+		GLOBAL $DB;
+		return sqlsrv_query($DB, $query);
+	}
+
+	function runPreparedQuery($query, $params)
+	{
+		GLOBAL $DB;
+		return sqlsrv_query($DB, $query, $params);
 	}
 
 	function numRows($result)
 	{
-		return mssql_num_rows($result);
+		return sqlsrv_num_rows($result);
 	}
 
 	function fetchArray($result)
 	{
-		return mssql_fetch_array($result);
-	}*/
+		return sqlsrv_fetch_array($result);
+	}
+
 	function closeConnection()
 	{
-		mssql_close($DB);
+		sqlsrv_close($DB);
 	}
 ?>
