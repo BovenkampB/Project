@@ -4,12 +4,13 @@
 
 #verkoopgegevens{	
 	margin-top:3%;
-    height:10%;
+	height:10%;
 	float: right;
 	position: absolute;
 	width:40%;
 	top:35%;
 	left: 40%;
+	text-align: center;
 } 
 
 #tabel{
