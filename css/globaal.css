@@ -1,8 +1,14 @@
+
+
+
 .navbar-search button{
 	margin-top: -4px !important;
 }
 
-.navbar-search input{
+.navbar-search select{
+	width:125px;
+}
+.navbar-search input, select{
 	margin-top: 5px;
 }
 
