@@ -1,5 +1,16 @@
 
 
+.zoekproduct img{
+	margin-top: 5%;
+	
+}
+.zoekproduct button{
+	margin-left:20%
+}
+
+.well{
+	width: 30%;
+}
 
 .navbar-search button{
 	margin-top: -4px !important;
