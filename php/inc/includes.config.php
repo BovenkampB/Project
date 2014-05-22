@@ -10,5 +10,8 @@
 	);
 
 	$_CONFIG['params'] = array(
+		'contentType' => '',
+		'css'         => '',
+		'loginError'  => ''
 	);
 ?>

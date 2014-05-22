@@ -16,6 +16,7 @@
 	include(inc . 'template.php');
 	include(inc . 'database.php');
 	include(inc . 'gebruikers.php');
+	include(inc . 'functions.php');
 
 	/*
 		Verbinden met onze database
@@ -34,12 +35,13 @@
 	/*
 		Laad Alle Parameters
 	*/
-	$values = runQuery("SELECT * FROM Settings", NULL);
+	$values = runQuery("SELECT * FROM Settings");
 	while($row = fetchArray($values))
 	{
 		$_CONFIG['params'][$row['string']] = $row['value'];
 	}
 
+	$_CONFIG['params']['headerMenu'] = loadMenu();
 	/*
 		Laad De Pagina
 	*/

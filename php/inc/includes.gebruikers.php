@@ -10,12 +10,21 @@
 
 		$email = $values['email'];
 		$password = $values['password'];
-
-		$query = "SELECT * FROM gebruiker WHERE email = ? AND wachtwoord = ?";
+		$column = "";
+		if(strpos($email, "@") !== false)
+		{
+			$column = "email";
+		}
+		else
+		{
+			$column = "gebruikersnaam";
+		}
+		$query = "SELECT * FROM gebruiker WHERE ".$column." = ? AND wachtwoord = ?";
+		echo $query;
 		$source = runPreparedQuery($query, array($email, $password));
 		$row = fetchArray($source);
 
-		if($row['email'] == $values['email']){
+		if($row['email'] == $values['email'] || $row['gebruikersnaam'] == $values['email']){
 			$_SESSION['user']['username']   = $row['gebruikersnaam'];
 			$_SESSION['user']['email']      = $row['email'];
 			$_SESSION['user']['loggedin']   = true;
