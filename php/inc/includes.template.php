@@ -36,6 +36,8 @@
 			case "register":
 			case "logout":
 			case "product":
+			case "settings":
+			case "privacy":
 				return true;
 			break;
 
