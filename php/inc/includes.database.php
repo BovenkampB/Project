@@ -17,10 +17,10 @@
 		return sqlsrv_query($DB, $query);
 	}
 
-	function runPreparedQuery($query, $params)
+	function runPreparedQuery($query, $params, $options = array())
 	{
 		GLOBAL $DB;
-		return sqlsrv_query($DB, $query, $params);
+		return sqlsrv_query($DB, $query, $params, $options);
 	}
 
 	function numRows($result)

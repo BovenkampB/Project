@@ -30,8 +30,8 @@
 												<input class="span2" type="password" placeholder="Password" name="password">								 
 												<button type="submit" name="loginHeader" value="Login" class="btn">Login</button>
 												<br/>
-												 <a href=#>Registreer</a>
-												 <a href=#>Wachtwoord vergeten</a>
+												 <a href=?p=register>Registreer</a>
+												 <a href=?p=lostpassword>Wachtwoord vergeten</a>
 											</form>';
 	}
 ?>
