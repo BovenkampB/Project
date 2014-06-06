@@ -1,0 +1,52 @@
+
+    <div id="biedpaneel">
+        <p>%productTimeLeft%</p>
+        <div id="biedingen">
+            <b>Biedingen:</b>
+            %bids%
+        </div>
+        <br/>
+        Minimum bod: &euro;%minBid%
+        <br/>
+        %errorMessage%
+        %bidForm%
+    </div>
+
+    <div id="product">
+      
+        <h1>%productNaam%</h1>
+        <img id = "foto" src="upload/%productImage%" />
+        <p class="beschrijving">%productBeschrijving%</p>
+        <hr>
+        %productSubImages%
+    </div>
+
+    <div class="container marketing">
+      <div class="row">
+        <div class="span4">
+          <img src="upload/%productRelated1Image%"> 
+          <h2>%productRelated1Titel%</h2>
+          <p>%productRelated1Beschrijving%</p>
+          <h2>&euro; %productRelated1Prijs%</h2>
+          <h4>Resterende tijd:<br /> %productRelated1TimeLeft%</h4>
+          <p><a class="btn btn-large btn-primary" href="?p=product&amp;id=%productRelated1%">Bieden</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img src="upload/%productRelated2Image%"> 
+          <h2>%productRelated2Titel%</h2>
+          <p>%productRelated2Beschrijving%</p>
+          <h2>&euro; %productRelated2Prijs%</h2>
+          <h4>Resterende tijd: <br /> %productRelated2TimeLeft%</h4>
+          <p><a class="btn btn-large btn-primary" href="?p=product&amp;id=%productRelated2%">Bieden</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img src="upload/%productRelated3Image%"> 
+          <h2>%productRelated3Titel%</h2>
+          <p>%productRelated3Beschrijving%</p>
+          <h2>&euro; %productRelated3Prijs%</h2>
+          <h4>Resterende tijd: <br /> %productRelated3TimeLeft%</h4>
+          <p><a class="btn btn-large btn-primary" href="?p=product&amp;id=%productRelated3%">Bieden</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+      %feedbackForm%
+    </div>

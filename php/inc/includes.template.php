@@ -36,8 +36,9 @@
 			case "register":
 			case "logout":
 			case "product":
+			case "zoek":
+			case "mveilingen":
 			case "settings":
-			case "privacy":
 				return true;
 			break;
 

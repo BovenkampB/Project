@@ -172,18 +172,19 @@
                                     </tr>
                                     <tr> 
                                         <td>Telefoon nr:</td>
-										<td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
+                                        <td> <input class="input" type="text" name="telefoon1" placeholder="Telefoon nr." /> </td>
 																			
                                     </tr>
-                                    <tr> 
-                                        <td>Extra&nbsp;telefoon&nbsp;nr:</td>
-                                        <td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
-                                         <td><button type="button" class="btn btn-success">+</button>
-                                            <button type="button" class="btn btn-danger">-</button></td>                                                                             
+                                    <tr>
+                                        
+                                        <td>Extra&nbsp;telefoon&nbsp;nr's:</td>
+                                        <td> <input class="input" type="text" name="telefoon2" placeholder="Telefoon nr." /> </td>                                                                                                        
                                     </tr>
-									<tr>
-										<td>Extra&nbsp;telefoon&nbsp;nr:</td>
-										<td> <input class="input" type="text" name="Telefoon nr." placeholder="Telefoon nr." /> </td>
+                                    <tr>
+                                            <td></td>
+                                            <td><input id="addVar" type="button" class="btn btn-success" value="+"/>
+                                            <input id="remVar" type="button" class="btn btn-danger" value="-" /></td>    
+                                    </tr>
 
                                     </table>
                                      
@@ -200,8 +201,7 @@
                                         <tr>
                                             <td><input class="btn btn-large btn-primary" id="button" type="submit" value="Registreer"/> </td>
                                         </tr>
-                                    </table>
-                                      
+                                    </table>                                                                        
                             </fieldset>
 			</form>
 		</div><!--sluitend content-->
@@ -218,8 +218,9 @@
                     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+      <script defer src="/js/extra.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <script>
       !function ($) {
         $(function(){

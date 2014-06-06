@@ -184,7 +184,7 @@
 		GLOBAL $_CONFIG;
 		require_once('mailserver/class.phpmailer.php');
 		$mail			 = new PHPMailer();
-		$body			 = "Hallo, Hierbij de code om verder te kunnen met het registreren op EenmaalAndermaal. Mocht u geen code hebben aangevraagd dan kunt u deze email negeren. U code is: " . $code;
+		$body			 = "Hallo, Hierbij is de code om verder te kunnen met het registreren op EenmaalAndermaal. Mocht je geen code hebben aangevraagd dan kan je deze email negeren. Je code is: " . $code;
 		$mail = new PHPMailer();  // create a new object
 		$mail->IsSMTP(); // enable SMTP
 		$mail->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only

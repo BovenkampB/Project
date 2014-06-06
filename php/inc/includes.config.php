@@ -12,6 +12,7 @@
 	$_CONFIG['params'] = array(
 		'contentType' => '',
 		'css'         => '',
-		'loginError'  => ''
+		'loginError'  => '',
+		'footerJS'    => ''
 	);
 ?>

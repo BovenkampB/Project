@@ -11,10 +11,14 @@
 
 	if(isset($_SESSION['user']['loggedin'])){
 		$_CONFIG['params']['loginPart'] = '<ul class="nav pull-right">
-											<form class="navbar-search pull-left" role="search"> 
-												<input class="search" type="text" placeholder="Zoek Product">
-												<button type="submit" class="btn">Zoek</button>
-											</form>
+											<form class="navbar-search pull-left" method="post" action="?p=zoek" role="search">
+							                    <select name="t" class="selectpicker ">
+							                      <option value="1">Product titel</option>
+							                      <option value="2">Rubriek</option>
+							                    </select>
+							                    <input class="search" name="s" type="text" placeholder="Zoek">
+							                    <button type="submit" class="btn">Zoek</button>
+							                </form>
 											<li class="nav dropdown pull-right">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingelogd: %voornaam% %achternaam% <b class="caret"></b></a>
 												<ul class="dropdown-menu pull-right">

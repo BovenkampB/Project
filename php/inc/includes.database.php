@@ -37,4 +37,9 @@
 	{
 		sqlsrv_close($DB);
 	}
+
+	function prepareQuery($query, $params = array())
+	{
+		return sqlsrv_prepare($DB, $query, $params);
+	}
 ?>
