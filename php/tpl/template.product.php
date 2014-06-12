@@ -77,7 +77,7 @@
 
 	while($item = fetchArray($source))
 	{
-		if(!isset($item['filenaa']))
+		if(!isset($item['filenaam']))
 			$item['filenaam'] = '404.png';
 
 		addItem($counter, $item);
@@ -168,7 +168,7 @@
 		GLOBAL $_CONFIG, $timeStampQuery;
 		$_CONFIG['params']['productRelated' . $counter] = $item['voorwerpnummer'];
 		$_CONFIG['params']['productRelated' . $counter . 'Titel'] = $item['titel'];
-		$_CONFIG['params']['productRelated' . $counter . 'Beschrijving'] = $item['beschrijving'];
+		$_CONFIG['params']['productRelated' . $counter . 'Beschrijving'] = substr($item['beschrijving'], 0, 200) . '...';
 		$_CONFIG['params']['productRelated' . $counter . 'Prijs'] = $item['startprijs'];
 		$_CONFIG['params']['productRelated' . $counter . 'TimeLeft'] = fetchArray(runPreparedQuery($timeStampQuery, array($item['datumtijd']->format('Y-m-d H:i:s'))));
 		$_CONFIG['params']['productRelated' . $counter . 'Image'] = $item['filenaam'];

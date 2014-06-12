@@ -1,5 +1,5 @@
 <?php
-	GLOBAL $_CONFIG;
+	GLOBAL $_CONFIG, $BD;
 
 	if(isset($_POST))
 	{
@@ -37,5 +37,16 @@
 												 <a href=?p=register>Registreer</a>
 												 <a href=?p=lostpassword>Wachtwoord vergeten</a>
 											</form>';
+	}
+
+	$query = "SELECT * FROM Rubriek WHERE volgnr = 0";
+	$source = runPreparedQuery($query, array());
+
+	$_CONFIG['params']['rubrieken'] = "";
+
+	while($row = fetchArray($source))
+	{
+		$_CONFIG['params']['rubrieken'] .= '<li class="dropdown-submenu">
+												<a href="?p=rubrieklist&amp;='.$row['rubrieknummer'].'">'.$row['rubrieknaam'].'</a></li>';
 	}
 ?>
